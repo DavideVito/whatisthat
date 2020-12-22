@@ -6,10 +6,9 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 
-import { preloadFirestore, useFirebaseApp, useFirestore } from "reactfire";
+import { useAnalytics, useFirestore } from "reactfire";
 
 import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
 
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";

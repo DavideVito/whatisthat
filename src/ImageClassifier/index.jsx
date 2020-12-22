@@ -6,6 +6,7 @@ import MostraInfo from "../MostraInfo";
 import Typography from "@material-ui/core/Typography";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 import Grid from "@material-ui/core/Grid";
+import { SuspenseWithPerf } from "reactfire";
 
 let ImageClassifier = (props) => {
   let [classifier, setClassifier] = useState(null);
@@ -79,9 +80,12 @@ let ImageClassifier = (props) => {
 
       {result ? (
         <>
-          <Suspense fallback={<div>Loading</div>}>
+          <SuspenseWithPerf
+            firePerf="Loading firestore doc"
+            fallback={<div>Loading</div>}
+          >
             <MostraInfo result={result} phrase={phrase} imageSrc={imageSrc} />
-          </Suspense>
+          </SuspenseWithPerf>
         </>
       ) : (
         <></>

@@ -3,11 +3,7 @@ import Typography from "@material-ui/core/Typography";
 
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  useFirestore,
-  useFirestoreDocDataOnce,
-  useFirestoreDocData,
-} from "reactfire";
+import { useFirestore, useFirestoreDocData } from "reactfire";
 import "firebase/firestore";
 
 const useStyles = makeStyles((theme) => ({
