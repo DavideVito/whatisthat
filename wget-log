@@ -1,0 +1,11 @@
+--2020-12-18 23:05:38--  https://firebasestorage.googleapis.com/v0/b/prova-23591.appspot.com/o/fiori.zip?alt=media
+Resolving firebasestorage.googleapis.com (firebasestorage.googleapis.com)... 64.233.167.95, 2a00:1450:400c:c06::5f
+Connecting to firebasestorage.googleapis.com (firebasestorage.googleapis.com)|64.233.167.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14907986 (14M) [application/zip]
+Saving to: ‘fiori.zip?alt=media’
+
+fiori.zip?alt=media                          0%[                                                                                      ]       0  --.-KB/s               fiori.zip?alt=media                         28%[=======================>                                                              ]   4.01M  14.9MB/s               fiori.zip?alt=media                        100%[=====================================================================================>]  14.22M  40.2MB/s    in 0.4s    
+
+2020-12-18 23:05:39 (40.2 MB/s) - ‘fiori.zip?alt=media’ saved [14907986/14907986]
+
