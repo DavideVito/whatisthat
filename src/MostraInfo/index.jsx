@@ -24,9 +24,17 @@ let MostraInfo = ({ result, imageSrc, phrase }) => {
     .collection("Castiglion Fiorentino")
     .doc(result.label);
 
-  let { data: documento } = useFirestoreDocData(docRef);
+  const [lingua, setLingua] = React.useState("en");
 
-  console.log(documento);
+  React.useEffect(() => {
+    let userLang = navigator.language || navigator.userLanguage;
+
+    userLang = userLang.split("-")[0];
+    console.log(userLang);
+    setLingua(userLang);
+  }, []);
+
+  let { data: documento } = useFirestoreDocData(docRef);
 
   return (
     <div
@@ -45,7 +53,11 @@ let MostraInfo = ({ result, imageSrc, phrase }) => {
 
         <Grid item xs={12}>
           {documento && (
-            <Typography variant="h6">{documento.storia}</Typography>
+            <Typography variant="h6">
+              {documento[lingua]
+                ? documento[lingua].storia
+                : documento["it"].storia}
+            </Typography>
           )}
         </Grid>
       </Grid>

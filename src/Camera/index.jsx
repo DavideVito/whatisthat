@@ -6,8 +6,8 @@ const Camera = () => {
   const webcamRef = React.useRef(null);
 
   const videoConstraints = {
-    facingMode: { exact: "environment" },
-    //facingMode: "user",
+    //facingMode: { exact: "environment" },
+    facingMode: "user",
   };
 
   return (
